@@ -1,0 +1,29 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "testing testing 123",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KageRyu7/Playground.git"
+  },
+  "author": "Ryan Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KageRyu7/Playground/issues"
+  },
+  "homepage": "https://github.com/KageRyu7/Playground#readme",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1",
+    "jsx-transform": "^2.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "reactify": "^1.1.1"
+  }
+}
