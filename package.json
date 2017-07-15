@@ -20,6 +20,7 @@
     "browserify": "^14.4.0",
     "child_process": "^1.0.2",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-webserver": "^0.9.1",
     "jsx-transform": "^2.3.0",
     "react": "^15.6.1",
