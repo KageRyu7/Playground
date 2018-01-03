@@ -1,0 +1,26 @@
+FROM python:3.4.6-alpine
+
+# Install packages
+RUN apk update
+RUN apk add wget
+RUN apk add gcc
+RUN apk add g++
+RUN apk add make
+RUN apk add py-mysqldb
+
+# Install mysql-python
+RUN pip install wheel
+RUN pip install pymysql
+
+# Install flask
+RUN pip install --upgrade pip
+RUN pip install Flask
+
+# Copy Flask server files
+RUN mkdir /opt
+RUN mkdir /opt/mms
+WORKDIR /opt/mms
+COPY mmFlaskServer.py ./mmFlaskServer.py
+
+# Run
+CMD sleep 10 && python /opt/mms/mmFlaskServer.py

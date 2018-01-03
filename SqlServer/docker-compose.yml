@@ -1,0 +1,13 @@
+mmsql:
+  image: mysql/mysql-server:5.7
+  ports:
+    - "80:80"
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    MYSQL_DATABASE: "mmdata"
+    MYSQL_ROOT_HOST: "%"
+
+mmflask:
+  image: mm_flask_server
+  net:
+    container:mmsql
